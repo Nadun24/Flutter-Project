@@ -8,12 +8,14 @@ class FirstPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       backgroundColor: Color(0xffEFF2F4),
       body: Stack(
         children: [
           Positioned(
-            top: 160,
+            top: screenHeight*0.27,
             left: 0,
             right: 0,
             child: Container(child: Image.asset('assets/Background.png')),
@@ -47,7 +49,7 @@ class FirstPage extends StatelessWidget {
             bottom: 0,
             child: Container(
               width: double.infinity,
-              height: 430,
+              height: screenHeight*0.46,
               decoration: BoxDecoration(
                   color: Color(
                     0xffFEFEFE,
