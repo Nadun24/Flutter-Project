@@ -90,7 +90,8 @@ class FirstPage extends StatelessWidget {
                       child: TextField(
                         decoration: InputDecoration(
                             fillColor: Color(0xffEFF2F4),
-                            border: OutlineInputBorder(),
+                            border:OutlineInputBorder(),
+                            
                             hintText: 'Email Address',
                             suffixIcon: new Icon(Icons.mail)),
                       ),

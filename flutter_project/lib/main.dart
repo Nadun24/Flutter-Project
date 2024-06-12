@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project/Pages/alertBox.dart';
 import 'package:flutter_project/Pages/firstPage.dart';
+import 'package:flutter_project/Pages/newalertBox.dart';
 
 import 'package:flutter_project/Pages/secondPage.dart';
 
@@ -44,6 +45,14 @@ class MyApp extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                             builder: (context) => AlertBox(),
+                            ),
+                        );
+                      }, child: Text("screen3 ")),
+                      ElevatedButton(onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => NewAlertBox(),
                             ),
                         );
                       }, child: Text("screen3 ")),
