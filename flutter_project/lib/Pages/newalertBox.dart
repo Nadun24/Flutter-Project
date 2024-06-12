@@ -32,10 +32,8 @@ class CustomDialogWidget extends StatelessWidget {
         width: 271,
         height: 400,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.only(
-            bottomLeft: Radius.circular(10),
-            bottomRight: Radius.circular(10),
-          ),
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(10),
         ),
         child: Stack(
           children: [
@@ -90,7 +88,7 @@ class CustomDialogWidget extends StatelessWidget {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(Icons.check, color: Colors.white,),
+                            Icon(Icons.check, color: Color(0xffEFF2F4),),
                             SizedBox(width: 4,),
                             Text("Yes",style: TextStyle(color: Color(0xffFEFEFE)),),
                           ],
